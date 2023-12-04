@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Frota de Naves</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Frota de Espaçonaves</h1>
+
+        <div id="add-spacecraft-form">
+            <h2>Adicionar Espaçonave</h2>
+            <form id="spacecraft-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="model">Modelo:</label>
+                <input type="text" id="model" name="model">
+
+                <label for="manufacturer">Fabricante:</label>
+                <input type="text" id="manufacturer" name="manufacturer">
+
+                <label for="mission">Missão:</label>
+                <select id="mission" name="mission" required></select>
+
+                <button type="button" onclick="addSpacecraft()">Adicionar Espaçonave</button>
+            </form>
+        </div>
+
+        <div id="missions-container"></div>
+    </div>
+    <Script src="js/script.js"></Script>
+</body>
+</html>
